@@ -169,54 +169,73 @@ flexibility(document.documentElement);
 
 -------------------------------------------------------------------------------------------------------
 
- <form action="#" method="post" enctype="multipart/form-data">
+    <form action="#" method="post" enctype="multipart/form-data">
         <div class="section">
             <h3>Contact Information</h3>
 
-            <label for="salutation">Salutation:</label>
-            <select id="salutation" name="salutation" required>
-                <option value="Mrs">Mrs</option>
-                <option value="Miss">Miss</option>
-                <option value="Ms">Ms.</option>
-                <option value="Dr">Dr.</option>
-                <option value="Prof">Prof.</option>
-            </select>
+            <div class="form-field">
+                <label for="salutation">Salutation:</label>
+                <select id="salutation" name="salutation" required>
+                    <option value="Mrs">Mrs</option>
+                    <option value="Miss">Miss</option>
+                    <option value="Ms">Ms.</option>
+                    <option value="Dr">Dr.</option>
+                    <option value="Prof">Prof.</option>
+                </select>
+            </div>
 
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" required>
+            <div class="form-field">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
 
-            <label for="middleName">Middle Name:</label>
-            <input type="text" id="middleName" name="middleName">
+            <div class="form-field">
+                <label for="middleName">Middle Name:</label>
+                <input type="text" id="middleName" name="middleName">
+            </div>
 
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" required>
+            <div class="form-field">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
 
-            <label for="cityState">City/State of Residence:</label>
-            <input type="text" id="cityState" name="cityState" required>
+            <div class="form-field">
+                <label for="cityState">City/State of Residence:</label>
+                <input type="text" id="cityState" name="cityState" required>
+            </div>
 
-            <label for="birthDate">Birth Date:</label>
-            <input type="date" id="birthDate" name="birthDate" required>
+            <div class="form-field">
+                <label for="birthDate">Birth Date:</label>
+                <input type="date" id="birthDate" name="birthDate" required>
+            </div>
 
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required>
+            <div class="form-field">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
 
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required>
+            <div class="form-field">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
 
-            <label for="measurements">Measurements (height, waist, bust/chest, hips):</label>
-            <textarea id="measurements" name="measurements" rows="4" required></textarea>
+            <div class="form-field">
+                <label for="measurements">Measurements (height, waist, bust/chest, hips):</label>
+                <textarea id="measurements" name="measurements" rows="4" required></textarea>
+            </div>
         </div>
 
         <div class="section">
             <h3>Experience</h3>
 
-            <label for="previousShoots">List of Previous Modeling Shoots:</label>
-            <textarea id="previousShoots" name="previousShoots" rows="6" required></textarea>
+            <div class="form-field">
+                <label for="previousShoots">List of Previous Modeling Shoots:</label>
+                <textarea id="previousShoots" name="previousShoots" rows="6" required></textarea>
+            </div>
         </div>
 
         <button type="submit">Submit Application</button>
     </form>
-
 
 
 --------------------------------------------------------------------------------------------------------------
