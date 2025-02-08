@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#">
 <head>
@@ -165,166 +166,60 @@ flexibility(document.documentElement);
 		
 <div class="entry-content clear" itemprop="text">
 
-	
-	
 
-        
+-------------------------------------------------------------------------------------------------------
 
-                <form class="wpuf-form-add weforms-1254  wpuf-style" action="" method="post" id="">
+ <form action="#" method="post" enctype="multipart/form-data">
+        <div class="section">
+            <h3>Contact Information</h3>
 
-            <ul class="wpuf-form form-label-above">
+            <label for="salutation">Salutation:</label>
+            <select id="salutation" name="salutation" required>
+                <option value="Mrs">Mrs</option>
+                <option value="Miss">Miss</option>
+                <option value="Ms">Ms.</option>
+                <option value="Dr">Dr.</option>
+                <option value="Prof">Prof.</option>
+            </select>
 
-                        <li class="wpuf-el contact_person" data-label="Contact Information">
-            <div class="wpuf-section-wrap wpuf-fields section_1254 wpuf_contact_person_1254" data-style="wpuf-style">
-                <h2 class="wpuf-section-title">Contact Information</h2>
-                <div class="wpuf-section-details"> </div>
-            </div>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
 
-        </li>
-                <li class="wpuf-el salutation field-size-large" data-label="Salutation">
-                    <div class="wpuf-label">
-            <label for="salutation_1254">Salutation <span class="required">*</span></label>
+            <label for="middleName">Middle Name:</label>
+            <input type="text" id="middleName" name="middleName">
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="cityState">City/State of Residence:</label>
+            <input type="text" id="cityState" name="cityState" required>
+
+            <label for="birthDate">Birth Date:</label>
+            <input type="date" id="birthDate" name="birthDate" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="measurements">Measurements (height, waist, bust/chest, hips):</label>
+            <textarea id="measurements" name="measurements" rows="4" required></textarea>
         </div>
-        
-            
-            <div class="wpuf-fields">
-                <select class="wpuf_salutation_1254" id="salutation_1254" name="salutation" data-required="yes" data-type="select" data-style="wpuf-style">
-                                            <option value="">— Select —</option>
-                                                                    <option value="mr">Mr</option>
-                                                        <option value="mrs">Mrs</option>
-                                                        <option value="miss">Miss</option>
-                                                        <option value="ms.">Ms.</option>
-                                                        <option value="dr.">Dr.</option>
-                                                        <option value="prof">Prof.</option>
-                                            </select>
-                            </div>
 
-        </li>
-                <li class="wpuf-el format field-size-large" data-label="Name">
-                    <div class="wpuf-label">
-            <label for="format_1254">Name <span class="required">*</span></label>
+        <div class="section">
+            <h3>Experience</h3>
+
+            <label for="previousShoots">List of Previous Modeling Shoots:</label>
+            <textarea id="previousShoots" name="previousShoots" rows="6" required></textarea>
         </div>
-        
-            <div class="wpuf-fields">
-                <div class="wpuf-name-field-wrap format-first-middle-last" data-style="wpuf-style">
-                    <div class="wpuf-name-field-first-name">
-                        <input name="format[first]" type="text" placeholder="" value="" size="40" data-required="yes" data-type="text" data-style="wpuf-style" class="textfield wpuf_format_1254" autocomplete="given-name">
-                                                    <label class="wpuf-form-sub-label" data-style="wpuf-style">First</label>
-                                            </div>
 
-                                            <div class="wpuf-name-field-middle-name">
-                            <input name="format[middle]" type="text" class="textfield" placeholder="" value="" size="40" autocomplete="additional-name" data-style="wpuf-style">
-                                                            <label class="wpuf-form-sub-label" data-style="wpuf-style">Middle</label>
-                                                    </div>
-                    
-                    <div class="wpuf-name-field-last-name">
-                        <input name="format[last]" type="text" class="textfield" placeholder="" value="" size="40" autocomplete="family-name" data-style="wpuf-style">
-                                                    <label class="wpuf-form-sub-label" data-style="wpuf-style">Last</label>
-                                            </div>
-                </div>
-                            </div>
-        </li>
-                <li class="wpuf-el city_state_of_residence field-size-large" data-label="City/State of Residence">
-                    <div class="wpuf-label">
-            <label for="city_state_of_residence_1254">City/State of Residence</label>
-        </div>
-        
-            <div class="wpuf-fields">
-                <input class="textfield wpuf_city_state_of_residence_1254" id="city_state_of_residence_1254" type="text" data-duplicate="no" data-required="no" data-type="text" name="city_state_of_residence" placeholder="" value="" size="40" data-style="wpuf-style">
+        <button type="submit">Submit Application</button>
+    </form>
 
-                <span class="wpuf-wordlimit-message wpuf-help"></span>
-                            </div>
-                    </li>
-                <li class="wpuf-el birth_date field-size-large" data-label="Birth Date">
-                    <div class="wpuf-label">
-            <label for="birth_date_0">Birth Date</label>
-        </div>
-        
-            <div class="wpuf-fields">
-                <input id="wpuf-date-birth_date" type="text" class="datepicker  wpuf_birth_date_1254" data-required="no" data-type="text" data-style="wpuf-style" name="birth_date" placeholder="mm/dd/yy" value="" size="30">
-                            </div>
-        </li>
-                <li class="wpuf-el email_address field-size-large" data-label="Email Address">
-                    <div class="wpuf-label">
-            <label for="email_address_1254">Email Address <span class="required">*</span></label>
-        </div>
-        
-            <div class="wpuf-fields">
-                <input class="textfield wpuf_email_address_1254" id="email_address_1254" type="text" data-duplicate="no" data-required="yes" data-type="text" name="email_address" placeholder="" value="" size="40" data-style="wpuf-style">
 
-                <span class="wpuf-wordlimit-message wpuf-help"></span>
-                            </div>
-                    </li>
-                <li class="wpuf-el phone_number field-size-large" data-label="Phone Number">
-                    <div class="wpuf-label">
-            <label for="phone_number_1254">Phone Number <span class="required">*</span></label>
-        </div>
-        
-            <div class="wpuf-fields">
-                <input class="textfield wpuf_phone_number_1254" id="phone_number_1254" type="text" data-duplicate="no" data-required="yes" data-type="text" name="phone_number" placeholder="" value="" size="40" data-style="wpuf-style">
 
-                <span class="wpuf-wordlimit-message wpuf-help"></span>
-                            </div>
-                    </li>
-                <li class="wpuf-el payment_information" data-label="Personal Information">
-            <div class="wpuf-section-wrap wpuf-fields section_1254 wpuf_payment_information_1254" data-style="wpuf-style">
-                <h2 class="wpuf-section-title">Personal Information</h2>
-                <div class="wpuf-section-details"> </div>
-            </div>
-
-        </li>
-                <li class="wpuf-el measurements__height__waist__bust_chest__hips__ field-size-large" data-label="Measurements (height, waist, bust/chest, hips):">
-                    <div class="wpuf-label">
-            <label for="measurements__height__waist__bust_chest__hips___1254">Measurements (height, waist, bust/chest, hips):</label>
-        </div>
-                                    <div class="wpuf-fields">
-            
-                                    <textarea class="textareafield  wpuf_measurements__height__waist__bust_chest__hips___1254" id="measurements__height__waist__bust_chest__hips___1254" name="measurements__height__waist__bust_chest__hips__" data-required="no" data-type="textarea" placeholder="" rows="5" cols="25" data-style="wpuf-style"></textarea>
-                    <span class="wpuf-wordlimit-message wpuf-help"></span>
-
-                
-                        </div>
-</li>
-                <li class="wpuf-el position_information" data-label="Experience">
-            <div class="wpuf-section-wrap wpuf-fields section_1254 wpuf_position_information_1254" data-style="wpuf-style">
-                <h2 class="wpuf-section-title">Experience</h2>
-                <div class="wpuf-section-details"> </div>
-            </div>
-
-        </li>
-                <li class="wpuf-el list_of_previous_modeling_shoots__copy field-size-large" data-label="List of Previous Modeling Shoots:">
-                    <div class="wpuf-label">
-            <label for="list_of_previous_modeling_shoots__copy_1254">List of Previous Modeling Shoots:</label>
-        </div>
-                                    <div class="wpuf-fields">
-            
-                                    <textarea class="textareafield  wpuf_list_of_previous_modeling_shoots__copy_1254" id="list_of_previous_modeling_shoots__copy_1254" name="list_of_previous_modeling_shoots__copy" data-required="no" data-type="textarea" placeholder="" rows="5" cols="25" data-style="wpuf-style"></textarea>
-                    <span class="wpuf-wordlimit-message wpuf-help"></span>
-
-                
-                        </div>
-</li>
-                <li class="wpuf-submit">
-            <div class="wpuf-label">
-                &nbsp;
-            </div>
-
-            <input type="hidden" id="_wpnonce" name="_wpnonce" value="d0f90bdfce"><input type="hidden" name="_wp_http_referer" value="/apply-now/?simply_static_page=510">
-            <input type="hidden" name="form_id" value="1254">
-            <input type="hidden" name="page_id" value="1266">
-            <input type="hidden" name="action" value="weforms_frontend_submit">
-
-                            <input type="hidden" name="weforms-front-report" value="no">
-            
-            
-                            <input type="submit" class="weforms_submit_btn wpuf_submit_1254" name="submit" value="Submit">
-                    </li>
-                </ul>
-
-        </form>
-                
-
-	
+--------------------------------------------------------------------------------------------------------------
 	
 </div>
 <!-- .entry-content .clear -->
@@ -529,3 +424,4 @@ Page Caching using Disk: Enhanced (Requested URI contains query)
 Served from: tncmodeling.com @ 2024-06-22 21:52:04 by W3 Total Cache
 -->
 </html>
+
